@@ -71,6 +71,7 @@ def create_csv_submission(ids, y_pred, name):
         for r1, r2 in zip(ids, y_pred):
             writer.writerow({"Id": int(r1), "Prediction": int(r2)})
 
+
 def standardize2(x_train, x_test):
     mean_x = np.mean(x_train)
     std_x = np.std(x_train)
