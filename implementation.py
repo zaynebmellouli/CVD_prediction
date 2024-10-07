@@ -2,6 +2,7 @@
 import numpy as np
 from helpers import *
 
+
 def compute_gradient(y, tx, w):
     """Computes the gradient at w.
 
@@ -17,12 +18,12 @@ def compute_gradient(y, tx, w):
     # INSERT YOUR CODE HERE
     # TODO: compute gradient vector
     # ***************************************************
-    w_prime = w[...,np.newaxis]
+    w_prime = w[..., np.newaxis]
     y_prime = y[..., np.newaxis]
     N = y.shape[0]
-    e = (y_prime - tx@w_prime)
+    e = y_prime - tx @ w_prime
     txT = np.moveaxis(tx, -1, -2)
-    grad = -1/N * txT @ e
+    grad = -1 / N * txT @ e
     return grad[..., 0]
 
 
@@ -43,7 +44,7 @@ def mean_squared_error_gd(y, tx, initial_w, max_iters, gamma):
     ws = [initial_w]
     losses = []
     w = initial_w.astype(float)
-    #y = y[:,np.newaxis]
+    # y = y[:,np.newaxis]
     for n_iter in range(max_iters):
         # ***************************************************
         # INSERT YOUR CODE HERE
@@ -65,7 +66,7 @@ def mean_squared_error_gd(y, tx, initial_w, max_iters, gamma):
                 bi=n_iter, ti=max_iters - 1, l=loss, w0=w[0], w1=w[1]
             )
         )
-        
+
     return losses, ws
 
 
@@ -95,7 +96,7 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
         y: shape=(N, )
         tx: shape=(N,2)
         initial_w: shape=(2, ). The initial guess (or the initialization) for the model parameters
-        
+
         max_iters: a scalar denoting the total number of iterations of SGD
         gamma: a scalar denoting the stepsize
 
@@ -104,7 +105,7 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
         ws: a list of length max_iters containing the model parameters as numpy arrays of shape (2, ), for each iteration of SGD
     """
 
-    #batch_size: a scalar denoting the number of data points in a mini-batch used for computing the stochastic gradient
+    # batch_size: a scalar denoting the number of data points in a mini-batch used for computing the stochastic gradient
     batch_size = 1
 
     # Define parameters to store w and loss
@@ -118,13 +119,13 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
         # TODO: implement stochastic gradient descent.
         # ***************************************************
         N = len(y)
-        
+
         for minibatch_y, minibatch_tx in batch_iter(y, tx, batch_size):
             grad = compute_stoch_gradient(minibatch_y, minibatch_tx, w)
         loss = compute_loss(y, tx, w)
-        
+
         w -= gamma * grad
-        
+
         ws.append(w)
         losses.append(loss)
 
@@ -152,17 +153,19 @@ def compute_loss(y, tx, w):
     # TODO: compute loss by MSE
     # ***************************************************
     return MAE(y, tx, w)
-    
-    
+
+
 def MSE(y, tx, w):
     N = len(y)
-    e = y[..., np.newaxis]-tx@w[..., np.newaxis]
+    e = y[..., np.newaxis] - tx @ w[..., np.newaxis]
     eT = np.moveaxis(e, -1, -2)
     loss = eT @ e
-    return loss[..., 0, 0] / (2*N)
+    return loss[..., 0, 0] / (2 * N)
+
 
 def MAE(y, tx, w):
-    e = y[..., np.newaxis]-tx@w[..., np.newaxis]
+    #TODO REMOVE
+    e = y[..., np.newaxis] - tx @ w[..., np.newaxis]
     loss = abs(e)
-    mean_loss = np.mean(loss, axis=loss.ndim-2)[..., 0]
+    mean_loss = np.mean(loss, axis=loss.ndim - 2)[..., 0]
     return mean_loss
