@@ -1,5 +1,5 @@
 import numpy as np
-
+import helpers as hp
 
 # ML Methods
 
@@ -7,6 +7,14 @@ import numpy as np
 def compute_loss(y, tx, w):
     """
     Compute the Mean Squared Error (MSE) loss.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        w (np array): weights
+
+    Returns:
+        float: computed MSE loss
     """
     e = y - tx.dot(w)
     return 1 / 2 * np.mean(e**2)
@@ -16,36 +24,32 @@ def compute_gradient(y, tx, w):
     """
     Compute the gradient with respect to w.
     This function is used when solving gradient based method.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        w (np array): weights
+
+    Returns:
+        np array: gradient of the loss with respect to the weights
     """
     e = y - tx.dot(w)
     grad = -(tx.T.dot(e)) / len(e)
     return grad
 
-
-def batch_iter(y, tx, batch_size, num_batches=1, shuffle=True):
-    """
-    Generate a minibatch iterator for a dataset.
-    Outputs an iterator which gives mini-batches of `batch_size` matching elements from `y` and `tx`.
-    """
-    data_size = len(y)
-
-    if shuffle:
-        shuffle_indices = np.random.permutation(np.arange(data_size))
-        shuffled_y = y[shuffle_indices]
-        shuffled_tx = tx[shuffle_indices]
-    else:
-        shuffled_y = y
-        shuffled_tx = tx
-    for batch_num in range(num_batches):
-        start_index = batch_num * batch_size
-        end_index = min((batch_num + 1) * batch_size, data_size)
-        if start_index != end_index:
-            yield shuffled_y[start_index:end_index], shuffled_tx[start_index:end_index]
-
-
 def mean_squared_error_gd(y, tx, initial_w, max_iters, gamma):
     """
     Perform linear regression using gradient descent with Mean Squared Error (MSE) as the loss function.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        initial_w (np array): initial weights
+        max_iters (int): maximum number of iterations
+        gamma (float): learning rate
+
+    Returns:
+        tuple: the final weights and the final loss
     """
     w = initial_w
 
@@ -74,13 +78,23 @@ def mean_squared_error_gd(y, tx, initial_w, max_iters, gamma):
 def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
     """
     Perform linear regression using stochastic gradient descent with Mean Squared Error (MSE) as the loss function.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        initial_w (np array): initial weights
+        max_iters (int): maximum number of iterations
+        gamma (float): learning rate
+
+    Returns:
+        tuple: the final weights and the final loss
     """
     w = initial_w
     batch_size = 1
 
     for n_iter in range(max_iters):
         # Generate minibatches using the batch_iter function
-        for mini_batch_y, mini_batch_tx in batch_iter(y, tx, batch_size):
+        for mini_batch_y, mini_batch_tx in hp.batch_iter(y, tx, batch_size):
             # Compute the gradient and the loss using the mini-batch
             grad = compute_gradient(mini_batch_y, mini_batch_tx, w)
             loss = compute_loss(mini_batch_y, mini_batch_tx, w)
@@ -100,6 +114,13 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
 def least_squares(y, tx):
     """
     Solve the least squares problem using the normal equations.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+
+    Returns:
+        tuple: optimal weights and the corresponding MSE loss.
     """
     # Compute the optimal weights using the normal equation
     w = np.linalg.solve(tx.T.dot(tx), tx.T.dot(y))
@@ -112,6 +133,14 @@ def least_squares(y, tx):
 def ridge_regression(y, tx, lambda_):
     """
     Perform Ridge Regression (L2 regularization) using the normal equations.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        lambda_ (float): regularization parameter
+
+    Returns:
+        tuple: optimal weights and the corresponding MSE loss.
     """
     # Get the number of features (D) from the tx shape
     D = tx.shape[1]
@@ -130,6 +159,12 @@ def ridge_regression(y, tx, lambda_):
 def sigmoid(t):
     """
     Compute the sigmoid function.
+
+    Args:
+        t (np array or float): input value or array of values
+
+    Returns:
+        numpy array or float: sigmoid of the input
     """
     return 1 / (1 + np.exp(-t))
 
@@ -137,6 +172,14 @@ def sigmoid(t):
 def compute_logistic_loss(y, tx, w):
     """
     Compute the logistic loss (negative log-likelihood).
+
+    Args:
+        y (numpy array): true labels
+        tx (numpy array): input data (features)
+        w (numpy array): weights
+
+    Returns:
+        float: computed logistic loss
     """
     pred = sigmoid(tx.dot(w))
     loss = -np.mean(y * np.log(pred) + (1 - y) * np.log(1 - pred))
@@ -146,6 +189,14 @@ def compute_logistic_loss(y, tx, w):
 def compute_logistic_gradient(y, tx, w):
     """
     Compute the gradient of the logistic loss.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        w (np array): weights
+
+    Returns:
+        np array: gradient of the logistic loss with respect to the weights
     """
     pred = sigmoid(tx.dot(w))
     grad = tx.T.dot(pred - y) / len(y)
@@ -155,6 +206,16 @@ def compute_logistic_gradient(y, tx, w):
 def logistic_regression(y, tx, initial_w, max_iters, gamma):
     """
     Logistic regression using gradient descent.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        initial_w (np array): initial weights
+        max_iters (int): maximum number of iterations
+        gamma (float): learning rate
+
+    Returns:
+        tuple: the final weights and the logistic loss.
     """
     w = initial_w
 
@@ -183,6 +244,17 @@ def logistic_regression(y, tx, initial_w, max_iters, gamma):
 def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
     """
     Regularized logistic regression using gradient descent.
+
+    Args:
+        y (np array): true labels
+        tx (np array): input data (features)
+        lambda_ (float): regularization parameter
+        initial_w (numpy array):  initial weights
+        max_iters (int): maximum number of iterations
+        gamma (float): learning rate
+
+    Returns:
+        tuple: the final weights and the logistic loss with regularization.
     """
     w = initial_w
 
