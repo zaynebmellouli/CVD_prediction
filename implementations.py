@@ -19,6 +19,8 @@ def compute_loss(y, tx, w):
     e = y - tx.dot(w)
     return 1 / 2 * np.mean(e**2)
 
+    return 1 / 2 * np.mean(e**2)
+
 
 def compute_gradient(y, tx, w):
     """
@@ -110,6 +112,7 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
     # Recompute the loss for the final weights (after the last iteration)
     final_loss = compute_loss(y, tx, w)
     return w, final_loss
+
 
 
 def least_squares(y, tx):
