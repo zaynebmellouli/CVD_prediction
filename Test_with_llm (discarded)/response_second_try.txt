@@ -1,0 +1,2983 @@
+Response for _STATE:
+{
+    "explanation": "The feature _STATE provides information about the patient's location, which can potentially be related to coronary heart disease trends, healthcare infrastructure, and lifestyle factors. However, without additional context, this feature is not clearly useful in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for FMONTH:
+{
+    "explanation": "The FMONTH feature appears to be a categorical feature representing the month of the year. The prediction of coronary heart disease does not seem to be strongly related to the month of the year, as it does not directly impact the progression of the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for IDATE:
+{
+    "explanation": "The interview date is not a contributor to the prediction of coronary heart disease and its inclusion is unlikely to improve the model's performance.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for IMONTH:
+{
+    "explanation": "The interview month feature is unlikely to have a significant impact on predicting coronary heart disease, as the association between interview month and the outcome is unclear.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for IDAY:
+Here is the response:
+
+{
+    "explanation": "IDAY seems to be an interview day, which may not have a direct correlation with coronary heart disease. It is unclear how this feature can be useful in predicting the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for IYEAR:
+{
+    "explanation": This feature seems to represent an interview year, which might not have a direct correlation with coronary heart disease. As the values are in 'YYYY' format, it's unlikely to have any significant impact on predicting the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for DISPCODE:
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease as it does not provide any quantitative information about the patient. It seems to be a categorical feature describing the completion status of an interview.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SEQNO:
+{
+    "explanation": "The annual sequence number is not a relevant feature for predicting coronary heart disease, as it is an arbitrary numbering system that doesn't provide any meaningful information about the individual",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PSU:
+Here is the response:
+
+{
+    "explanation": "This feature provides no apparent information about coronary heart disease, and its values do not seem to have any logical relationship to the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CTELENUM:
+{
+    "explanation": "This feature is not meaningful in the context of predicting coronary heart disease. Whether a patient's telephone number is correct or not is not a relevant factor in determining their risk of heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PVTRESD1:
+Here is the response:
+
+{
+    "explanation": "This feature is not clear in its relationship with coronary heart disease. The distinction between a private residence and not is not a strong indicator of the likelihood of heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for COLGHOUS:
+Here is the response in the requested dictionary format:
+
+{
+    "explanation": "The variable COLGHOUS is not directly related to coronary heart disease and does not provide valuable information for prediction.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for STATERES:
+{
+    "explanation": "Residing in a specific state may have some correlation with coronary heart disease, but it's not a clear determining factor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CELLFON3:
+Here is the response:
+
+{
+    "explanation": "The feature CELLFON3 seems to be unnecessary in predicting coronary heart disease as its values are simply indicating whether a subject has a cellular phone or not, which is not directly related to heart disease. The information is not quantitative enough to be useful in predicting the outcome of the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LADULT:
+{
+    "explanation": "This feature is somewhat related to cardiovascular disease. Age is a well-established risk factor for coronary heart disease. However, this feature is a binary (0 or 1) feature, which limits its usefulness. A more nuanced age feature may be more informative.",
+    "accepted": False,
+    "mapping_function": lambda x: 1 if x == "1" else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for NUMADULT:
+Here is the response:
+
+{
+    "explanation": "The number of adults in the household may have some correlation with coronary heart disease, as increased household stress and lack of personal space can negatively impact one's mental and physical health",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for NUMMEN:
+Here's the response:
+
+{
+    "explanation": "This feature seems to be a simple demographic factor, but it's unclear how it would directly relate to coronary heart disease. More data would be needed to understand the significance of this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for NUMWOMEN:
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease. The values are categorical and the relationship between the number of adult women in the household and the risk of coronary heart disease is not straightforward.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CTELNUM1:
+{
+    "explanation": "This feature seems irrelevant in predicting coronary heart disease, as it appears to be a question about a phone number and does not seem to be related to medical information or cardiac risk factors.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CELLFON2:
+{
+    "explanation": "This feature does not seem to have a clear correlation with coronary heart disease. It is a binary variable (cell phone use or not) which may not capture any meaningful information about the health condition.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CADULT:
+{
+    "explanation": "CADULT is a simple demographic feature that does not have a direct correlation with coronary heart disease. It does not contain information about the respondent's lifestyle, medical history, or physical characteristics that are commonly associated with the risk of heart disease. Therefore, its importance in predicting coronary heart disease is low.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PVTRESD2:
+{
+    "explanation": "This feature appears to be a simple yes/no question, which may not have a significant impact on the prediction of coronary heart disease. Without further analysis, it's unclear what significant correlation, if any, exists between living in a private residence and the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CCLGHOUS:
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease. Living in college housing may have some indirect impact, but it is not a direct contributor to the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CSTATE:
+Here is the response:
+
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease. It seems to be a simple yes/no question, and it does not appear to have any direct correlation with the outcome.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LANDLINE:
+Here is the response:
+
+{
+    "explanation": "This feature is likely not directly related to coronary heart disease and does not seem to have a correlation with the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HHADULT:
+Here is the response in the specified dictionary format:
+
+{
+    "explanation": "This feature seems to provide general information about the household and may not have a direct correlation with coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for GENHLTH:
+Here is the response:
+
+{
+    "explanation": "This feature provides a subjective self-reported assessment of general health which might be correlated with an increased risk of coronary heart disease. However, without further analysis, it is unclear if this relationship is causative or simply a correlation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PHYSHLTH:
+Here is the response in the requested format:
+
+{
+    "explanation": "This feature is an important indicator of physical health, which is a known risk factor for coronary heart disease. The number of days in the past 30 where physical health was not good may be correlated with the likelihood of developing coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' ')[0]) if value != 'BLANK' and value != '88' and value != '99' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MENTHLTH:
+Here is the response:
+
+{
+    "explanation": "Mental health not being good for a significant number of days (out of the past 30) may be an indicator of chronic stress and anxiety, which can increase the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(' - ')[0]) if x != '88' and x != '99' else None, 
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for POORHLTH:
+Here is the response for the feature POORHLTH:
+
+```
+{
+    "explanation": "This feature seems to capture the impact of physical and mental health on daily activities. It could potentially be a useful indicator of stress levels, which can contribute to coronary heart disease. However, the values in this feature are somewhat subjective and may not be directly correlated with the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split('-')[0]),
+    "category": "Numerical"
+}
+```
+--------------------------------------------------------------------------------
+Response for HLTHPLN1:
+{
+    "explanation": "This feature provides basic information about healthcare coverage, which may be relevant to cardiovascular health, especially for those with prior health issues.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == "1" else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PERSDOC2:
+Here is the response:
+
+{
+    "explanation": "This feature is relevant in predicting coronary heart disease as it indicates the patient's relationship with their healthcare provider. Having a personal doctor or healthcare provider can significantly impact the accuracy of diagnoses, treatment plans, and preventative measures.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MEDCOST:
+{
+    "explanation": "This feature could be indicative of financial constraints and lack of access to healthcare, which may be a contributing factor to coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: "Yes" if value == "1" else "No",
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CHECKUP1:
+Here is the response in the specified dictionary format:
+
+{
+    "explanation": "The timing of the last doctor's visit seems to be relevant to coronary heart disease. Patients who haven't visited a doctor in a while might be neglecting their health, which could increase the risk of heart disease. Conversely, frequent check-ups could suggest a proactive approach to health, which might reduce the risk.",
+    "accepted": True,
+    "mapping_function": lambda x: {
+        '1': 1, '2': 5, '3': 8, '7': 5, '8': 0, '9': np.nan, 'BLANK': np.nan
+    }[x],
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for BPHIGH4:
+Here is the response:
+
+{
+    "explanation": "Having a history of high blood pressure increases the risk of coronary heart disease, so this feature is likely to be important in predicting it. High blood pressure is a significant risk factor for heart disease, and doctors are likely to advise patients with high blood pressure to take steps to manage it to reduce the risk of heart problems",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for BPMEDS:
+{
+    "explanation": "This feature seems to be a proxy for the presence or absence of hypertension, which is a known risk factor for coronary heart disease. The presence of hypertension has been extensively linked to increased risk of coronary heart disease. Therefore, this feature is important for predicting the likelihood of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value in ['1',] else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for BLOODCHO:
+{
+    "explanation": "High blood cholesterol is a well-established risk factor for coronary heart disease, so this feature is crucial for predicting the disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x in ['1'] else 0,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for CHOLCHK:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be capturing the frequency of checking blood cholesterol levels. While it might have some correlation with the risk of coronary heart disease, it is not a clear or direct cause.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for TOLDHI2:
+Here is the response:
+
+{
+    "explanation": "This feature is important in predicting coronary heart disease as high blood cholesterol levels are a significant risk factor. It provides valuable information about the patient's medical history and can help identify individuals who are more likely to have the disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == "1" else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CVDINFR4:
+{
+    "explanation": "This feature provides information about the patient's history of heart attack, which is a significant risk factor for coronary heart disease. It is crucial for predicting the disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value in ['1', '2'] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CVDCRHD4:
+Here is the response for the feature:
+
+{
+    "explanation": "This feature is a binary indicator for whether the patient has ever been diagnosed with coronary heart disease. It's an important predictor of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == "1" else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CVDSTRK3:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be related to a previous event, a stroke. It might be a relevant indicator for coronary heart disease, but it's not a perfect correlation.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASTHMA3:
+{
+    "explanation": "This feature seems to be related to the risk of coronary heart disease but the relationship is not clear enough to be considered as a useful predictor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ASTHNOW:
+{
+    "explanation": "ASTHNOW does not seem to have a clear correlation with coronary heart disease. It is a categorical feature with values indicating whether the patient still has asthma, has other conditions or refused/did not know.",
+    "accepted": False,
+    "mapping_function": lambda x: 0 if x == '2' else 1,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CHCSCNCR:
+{
+    "explanation": "This feature may have some correlation with coronary heart disease, but it is not clearly a risk factor, and the correlation is not strong enough to justify inclusion in the model.",
+    "accepted": False,
+    "mapping_function": lambda x: 0 if x in ['2', '7', '9'] else 1,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CHCOCNCR:
+{
+    "explanation": "This feature seems to track a type of cancer history, which is arguably relevant to coronary heart disease. The presence or absence of other types of cancer could have an impact on the underlying health and risk factors for coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: {"1": "Yes", "2": "No", "7": "Don't know / Not sure", "9": "Refused"}.get(x, None),
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CHCCOPD1:
+Here is the response:
+
+{
+    "explanation": "This feature has little significance in predicting coronary heart disease as it's related to Chronic Obstructive Pulmonary Disease (COPD), which is a separate health condition",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HAVARTH3:
+Here is the response:
+
+{
+    "explanation": "This feature suggests the presence of other health issues that might increase the risk of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ADDEPEV2:
+Here is the response:
+
+{
+    "explanation": "This feature provides information about a patient's history of depressive disorder, which has been linked to increased risk of coronary heart disease. While it is not a direct causative factor, it can be an important indicator for predictive modeling.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CHCKIDNY:
+{
+    "explanation": "This feature is not directly related to coronary heart disease, and its inclusion could lead to overfitting. It's better to reject this feature and focus on more relevant variables.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DIABETE3:
+```
+{
+    "explanation": "This feature is relevant as diabetes is a risk factor for coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == "1" else 0,
+    "category": "Numerical"
+}
+```
+--------------------------------------------------------------------------------
+Response for DIABAGE2:
+Here is the response:
+
+{
+    "explanation": "This feature seems to have limited value in predicting coronary heart disease, as it notes the age at which the individual was told they had diabetes, but does not provide information about the individual's current diabetic status, duration of diabetes, etc.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for SEX:
+Here's the response:
+
+{
+    "explanation": "SEX is a basic demographic feature that can influence the risk of coronary heart disease. It's important to include this feature in the model.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == "1" else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MARITAL:
+{
+    "explanation": "The marital status is a sociodemographic factor that may be associated with coronary heart disease, but subtle correlations are not strong enough to make it a useful predictor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EDUCA:
+{
+    "explanation": "EDUCA can have a subtle impact on the prediction of coronary heart disease, as education level is a well-known risk factor. However, without further analysis, it's hard to say if this feature provides any significant information.",
+    "accepted": True,
+    "mapping_function": lambda x: {"1": 4, "2": 8, "3": 12, "4": 16, "5": 18, "6": 18, "9": None}[x],
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for RENTHOM1:
+Here is the response:
+
+{
+    "explanation": "This feature doesn't seem to have a direct correlation with coronary heart disease. It's related to household demographics and doesn't provide any specific information about the patient's health or risk factors. Therefore, it's not clearly useful in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for NUMHHOL2:
+{
+    "explanation": "This feature seems to be related to social factors, but it's unclear how it would impact coronary heart disease. The correlation needs to be more significant to be considered useful.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for NUMPHON2:
+{
+    "explanation": "This feature seems to track the number of telephone numbers a person has. While having more contact information could be related to socioeconomic status or occupation, it's unclear how this would directly impact coronary heart disease. I recommend rejecting this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CPDEMO1:
+Here is the response:
+
+{
+    "explanation": "This feature is unlikely to have a significant impact on predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VETERAN3:
+{
+    "explanation": "This feature has some information about the patient's military service, but it is not directly related to factors that would influence their coronary heart disease. It may not have a significant impact on the model's performance.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EMPLOY1:
+{
+    "explanation": "This feature seems to be related to employment status, which might have some correlation with coronary heart disease. However, the correlation is not explicitly strong and may be due to other factors.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CHILDREN:
+{
+    "explanation": "This feature seems to be a categorical variable categorizing households based on the number of children. However, it does not provide any clear correlation with coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for INCOME2:
+{
+    "explanation": "This feature appears to be categorical, as it is describing salary ranges. However, since we are trying to predict a continuous variable (coronary heart disease), this feature may not be directly useful.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for INTERNET:
+Here is the response:
+
+{
+    "explanation": "This feature provides limited insights into the correlation between internet usage and the risk of coronary heart disease, as it is a proxy measure and does not directly account for the amount of time spent online or the type of activities performed. The missing values also introduce noise into the data.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+
+Let me know if you'd like me to explain my reasoning!
+--------------------------------------------------------------------------------
+Response for WEIGHT2:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature, WEIGHT2, is a numerical feature and can potentially be a strong predictor of coronary heart disease. As a measurement of an individual's weight, it can contribute to the risk of developing the disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split('-')[0]) if value != 'BLANK' and value != 'Don’t know/Not sure' and value != 'Refused' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for HEIGHT3:
+{
+    "explanation": "HEIGHT3 seems to be a measure of physical stature, which may have some correlation with coronary heart disease risk. However, it is unclear why this feature is recorded in non-standard units (feet and inches, or meters and centimeters). More importantly, the data is highly imprecise, with exact values not provided and many responses being 'BLANK', 'Don’t know/Not sure', '9999', or '7777'. Such ambiguous data is unlikely to provide valuable insights for the model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PREGNANT:
+Here's the response:
+
+{
+    "explanation": "Pregnancy status does not seem to be a significant predictor of coronary heart disease",
+    "accepted": False, 
+    "mapping_function": None, 
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for QLACTLM2:
+Here is the response for the feature QLACTLM2:
+
+{
+    "explanation": "This feature is a self-reported question about limitations in physical, mental, or emotional activities. It may be related to coronary heart disease as individuals with physical or mental limitations may be more likely to develop cardiovascular disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(1) if value == '1' else int(0),
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for USEEQUIP:
+Here is the response:
+
+{
+    "explanation": "This feature does not seem to have a direct correlation with coronary heart disease. The question is asking about the use of special equipment, which might be a symptom of other conditions, but not necessarily relevant to heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for BLIND:
+{
+    "explanation": "This feature does not have a clear correlation with coronary heart disease and does not provide useful information for prediction. Blindness or visual impairment may be relevant to other medical conditions, but its impact on coronary heart disease is unclear.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DECIDE:
+{
+    "explanation": "The DECIDE feature indicates if an individual has difficulty concentrating, remembering, or making decisions, which might be related to coronary heart disease. However, the relationship is not immediately apparent, and the feature may not be particularly informative for prediction.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for DIFFWALK:
+{
+    "explanation": "DIFFWALK is a direct risk factor for coronary heart disease. Difficulty walking and climbing stairs can be a physical indication of cardiovascular disease. This feature is important and should be used to predict the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value in ["1", "2"] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for DIFFDRES:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be related to the physical abilities of the individual, which can be indicative of overall health. However, its relevance to coronary heart disease is unclear, as it does not directly address heart health.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DIFFALON:
+Here is the response:
+
+{
+    "explanation": "Although this feature seems to be related to functional ability, it does not seem to have a direct or significant correlation with the likelihood of coronary heart disease. The values are categorical and do not have a clear ordering, so it is unlikely to be useful in the model. ",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SMOKE100:
+{
+    "explanation": "This feature is not directly related to coronary heart disease and does not provide any clear information about the patient's health.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SMOKDAY2:
+Here is the response:
+
+{
+    "explanation": "SMOKDAY2 provides information about the individual's smoking habits, which is a well-known risk factor for Coronary Heart Disease. This feature can help predict the likelihood of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for STOPSMK2:
+Here's the response:
+
+{
+    "explanation": "This feature is important in predicting coronary heart disease as stopping smoking can significantly reduce the risk of heart disease. However, the categorical nature of this feature makes it difficult to utilise in a numerical model. A simple one-hot encoding or label encoding would be needed to utilise this feature effectively.",
+    "accepted": True,
+    "mapping_function": lambda value: 0 if value == "2" else 1,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LASTSMK2:
+{
+    "explanation": "The feature LASTSMK2 represents the time since last smoking. This is a significant risk factor for coronary heart disease, so it's likely that this feature will be important for predicting the disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != 'BLANK' and value != 'STOPSMK2,' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for USENOW3:
+{
+    "explanation": "The use of chewing tobacco, snuff, or snus may have a strong correlation with coronary heart disease, as tobacco use has been linked to various cardiovascular risks.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x in ['1', '2'] else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ALCDAY5:
+{
+    "explanation": "This feature measures the frequency of drinking alcohol and could potentially relate to coronary heart disease through various physiological pathways. However, without a clear numerical representation of the frequency, it's difficult to intuitively understand the relationship.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' - ')[0]) if value != '777' and value != '888' and value != '999' and value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for AVEDRNK2:
+Here is the response:
+
+{
+    "explanation": "This feature may have some relevance to coronary heart disease, as excessive drinking has been linked to increased risk of heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(' - ')[0]) if x != 'BLANK' and x != 'Don’t know/Not sure' and x != 'Refused' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for DRNK3GE5:
+Here is the response for the feature:
+
+{
+    "explanation": "This feature measures the frequency of heavy alcohol consumption, a known risk factor for coronary heart disease. This feature is likely to be important in predicting coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split('-')[0]) if x != 'BLANK' and x != '88' and x != '77' and x != '99' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MAXDRNKS:
+{
+    "explanation": "The feature MAXDRNKS seems to be related to alcohol consumption, which is a known risk factor for coronary heart disease. However, the values are categorical (drinks or unknown) and do not appear to have a clear linear relationship with the disease. Therefore, this feature may not be highly effective in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for FRUITJU1:
+{
+    "explanation": "This feature seems to be irrelevant in predicting coronary heart disease as it only measures consumption of 100% pure fruit juice, which is not a direct indicator of heart disease risk factors.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for FRUIT1:
+{
+    "explanation": "This feature provides information about the frequency of fruit consumption. While it may seem unrelated to coronary heart disease, there are some potential correlations. For instance, a diet rich in fruits may help reduce the risk of heart disease. However, without further analysis, the importance of this feature cannot be fully assessed.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FVBEANS:
+{
+    "explanation": "The frequency of bean consumption appears to be a potential risk factor for coronary heart disease, with increased consumption potentially leading to increased risk.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split()[0]) if value != 'BLANK' and value != 'Don’t know/Not sure' and value != 'Refused' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FVGREEN:
+Here is the response for the feature FVGREEN:
+
+{
+    "explanation": "Eating dark green vegetables may have a positive impact on overall health, which could affect the risk of coronary heart disease. However, the labels provided are not clear quantitative measures, so the feature's impact may be limited.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for FVORANG:
+{
+    "explanation": "Eating orange-colored vegetables regularly may have a positive impact on cardiovascular health, but the correlation with coronary heart disease is unclear and likely weak.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VEGETAB1:
+Here is the response for the VEGETAB1 feature:
+
+{
+    "explanation": "This feature seems to be an attempt to gather information on the frequency of consumption of various vegetables, which could potentially be relevant to coronary heart disease. However, the values are quite broad (e.g., '101-199' for 'times per day') which may not provide much granularity.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+
+Note that I am rejecting this feature as it does not provide enough clarity and precision to be useful in predicting coronary heart disease. The broad categorization of values does not provide sufficient detail to be considered a meaningful feature.
+--------------------------------------------------------------------------------
+Response for EXERANY2:
+{
+    "explanation": "Physical activity is a well-established risk factor for coronary heart disease, so this feature is important in predicting it.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for EXRACT11:
+{
+    "explanation": "This feature seems to be categorizing types of physical activity, which may not be directly related to coronary heart disease. While some physical activities may be more beneficial for cardiovascular health, the correlation may not be strong enough to justify including this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXEROFT1:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a categorical feature representing the frequency of exercising. While exercise is important for overall health, it's unclear how it specifically relates to coronary heart disease. A more meaningful metric might capture the intensity, duration, or frequency of exercise rather than simply the frequency of activity.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXERHMM1:
+{
+    "explanation": "The feature EXERHMM1 measures the time spent exercising and may be an important indicator of physical activity levels, which are a risk factor for coronary heart disease. This feature can provide valuable insights into the role of exercise in reducing the risk of heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: float(x.split(' - ')[0].replace('1', '')) if x != '777' and x != '999' and x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for EXRACT21:
+{
+    "explanation": "This feature helps understand the individual's physical activity habits, which can be a potential risk factor for coronary heart disease. However, the range of values seems quite specific and subjective (e.g., 'Active Gaming Devices (Wii Fit, Dance, Dance revolution)')",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXEROFT2:
+{
+    "explanation": "This feature provides information on the frequency of physical activity in a monthly or weekly cycle, which may be a sign of a healthy lifestyle that could help prevent coronary heart disease. However, the values are categorized and do not have a quantitative meaning, which makes it difficult to directly use in a machine learning model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXERHMM2:
+Here is the response:
+
+{
+    "explanation": "This feature appears to measure the duration of exercise activity, which may be relevant to coronary heart disease risk. However, the lack of numerical values and the inclusion of categorical values ('Don’t know/Not sure', 'Refused', 'BLANK', etc.) reduces its utility.",
+    "accepted": False,
+    "mapping_function": lambda x: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for STRENGTH:
+Here's the response in the format you specified:
+
+{
+    "explanation": "This feature (STRENGTH) may potentially be useful in predicting coronary heart disease, as regular physical activities or exercises can reduce the risk of the disease. However, it may not be a strong predictor of the disease if only a small number of samples are available.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split('-')[0]) if x != '777' and x != '888' and x != '999' and x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for LMTJOIN3:
+{
+    "explanation": "This feature may be relevant in predicting coronary heart disease as it captures the impact of arthritis or joint symptoms on daily activities, which may be a risk factor for heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ARTHDIS2:
+{
+    "explanation": "This feature may be loosely related to coronary heart disease, but the relationship is unclear and there may be too many missing or unclear values.",
+    "accepted": False,
+    "mapping_function": lambda x: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ARTHSOCL:
+Here's the response for the ARTHSOCL feature:
+
+{
+"explanation": "This feature provides information about the limitation of social activities due to arthritis or joint symptoms. While it might be an interesting aspect to consider for overall health, its relevance to coronary heart disease is questionable. I would reject this feature as the correlation is likely to be indirect and subtle.",
+"accepted": False,
+"mapping_function": None,
+"category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for JOINPAIN:
+Here is the response:
+
+{
+    "explanation": "This feature provides information about the severity of joint pain experienced by the individual over the past 30 days, which could be related to overall health and potential comorbidities that may be indicative of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: float(x) if x != '77' and x != '99' and x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for SEATBELT:
+Here is the response:
+
+{
+    "explanation": "This feature could be important in predicting coronary heart disease as regular seat belt use is a known risk factor for cardiovascular disease.",
+    "accepted": True,
+    "mapping_function": "lambda value: 1 if value == '1' else 0",
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FLUSHOT6:
+{
+    "explanation": "This feature may be useful in predicting coronary heart disease as it can indicate a person's health-consciousness and willingness to take preventative measures.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == "1" else 0,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for FLSHTMY2:
+Here is the response:
+
+{
+    "explanation": "This feature is not clearly related to coronary heart disease and does not seem to have any obvious impact on the risk of developing the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for IMFVPLAC:
+Here is the response:
+
+{
+    "explanation": "The IMFVPLAC feature does not appear to have a clear relationship with coronary heart disease. It is a categorical feature that captures information about where an individual received their last flu shot/vaccine, which does not seem to be directly related to heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PNEUVAC3:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a general health indicator, but its relationship with coronary heart disease is unclear and potentially weak.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HIVTST6:
+{
+    "explanation": "This feature is not directly related to coronary heart disease. HIV testing is not a known risk factor or predictor for coronary heart disease. However, it may be associated with some lifestyle factors that are related to CHD risk, such as high-risk behaviors.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HIVTSTD3:
+Here's the response:
+
+{
+    "explanation": "This feature seems to be irrelevant to coronary heart disease. HIV testing is not directly related to cardiovascular health. Rejecting this feature is reasonable.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for WHRTST10:
+{
+    "explanation": "This feature is not relevant to predicting coronary heart disease. It is related to HIV testing, not coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PDIABTST:
+{
+    "explanation": "While having a test for high blood sugar or diabetes within the past three years is potentially related to coronary heart disease, the information provided is not sufficient to conclude that this feature is crucial for prediction. Therefore, it is REJECTED.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PREDIAB1:
+Here is the response:
+
+{
+    "explanation": "This feature is important in predicting coronary heart disease as pre-diabetes and diabetes are known risk factors for heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for INSULIN:
+{
+    "explanation": "This feature seems to have a clear binary nature (yes or no). A clear correlation with the target variable (coronary heart disease) would be required for its acceptance.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for BLDSUGAR:
+{
+    "explanation": "This feature measures the frequency of self-monitoring of blood sugar at home, which is a potential indicator of diabetes and its impact on coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' - ')[0]) if value != '777' and value != '888' and value != '999' and value != 'BLANK' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FEETCHK2:
+Here is the response:
+
+{
+    "explanation": "This feature seems to measure self-reported foot care habits, which could potentially be related to overall health and lifestyle habits that could contribute to coronary heart disease. However, the correlation is likely to be weak and indirect.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DOCTDIAB:
+Here is the response:
+
+{
+    "explanation": "The DOCTDIAB feature does not appear to be clearly related to coronary heart disease",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CHKHEMO3:
+Here is the response:
+
+{
+    "explanation": "This feature is somewhat important as it provides information about the patient's recent medical history and the frequency of health checks, which can be related to coronary heart disease.",
+    "accepted": False,
+    "mapping_function": lambda x: int(x[0].split("-")[0]) if x[0] != 'BLANK' and x[0] != '88' and x[0] != '99' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FEETCHK:
+Here is the response in the specified format:
+
+{
+    "explanation": "The feature FEETCHK seems to be related to the frequency of health professional checks for foot sores or irritations. Although it's hard to directly link this to coronary heart disease, any feature that reflects a patient's overall health care habits could be worth examining. However, the categories are not clearly numerical or categorical, and the transformation to a numerical value is not straightforward.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EYEEXAM:
+Here is the response for the EYEEXAM feature:
+
+{
+    "explanation": "EYEEXAM does not provide direct information about the patient's health condition, and its correlation with coronary heart disease is uncertain. The feature is not clearly useful in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DIABEYE:
+Here is the response:
+
+{
+    "explanation": "Considering the variable is related to diabetes and its effect on eyes, it could have some potential correlations with coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for DIABEDU:
+{
+    "explanation": "DIABEDU is not a relevant feature in predicting coronary heart disease as it is a self-reported measure of diabetes education and does not provide any tangible information about the patient's health or risk of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PAINACT2:
+{
+    "explanation": "This feature seems to be an ordinal categorical variable representing the number of days pain made it hard to perform usual activities. It may be useful in understanding how pain affects daily life, which could be related to coronary heart disease. However, it is not a direct metric, and its correlation with coronary heart disease is unclear.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != 'BLANK' and value != 'Not asked or Missing' else None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for QLMENTL2:
+{
+    "explanation": "This feature is sensitive, but seems to be related to mental health and depression, which can potentially be linked to coronary heart disease. However, the relationship is not clear and could be due to other factors, and its importance is unknown without further analysis or evidence.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for QLSTRES2:
+{
+    "explanation": "QLSTRES2 is correlated with overall well-being and mental health, which can be an important indicator of coronary heart disease risk. The worried, tense, or anxious days can reflect biomarkers for cardiovascular disease, and this feature can help capture the emotional and psychological aspects of chronic stress.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split()[0]) if x != 'BLANK' and x != 'Not asked or Missing' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for QLHLTH2:
+{
+    "explanation": "This feature is not directly related to the risk of coronary heart disease. It measures subjective feelings of energy and health, which may not have a significant correlation with the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CAREGIV1:
+Here is the response for the CAREGIV1 feature:
+
+{
+    "explanation": "This feature seems to capture a patient's caregiver role, which may impact their stress levels and lifestyle, potentially influencing their risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int("1" if x == "1" else "0"),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVREL1:
+Here is the response:
+
+{
+    "explanation": "This feature may not be directly related to coronary heart disease, as it is a sociological factor. However, it may indirectly influence patient habits or lifestyles that could impact their risk of developing the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVLNG1:
+Here is the response:
+
+{
+    "explanation": "This feature does not seem to be directly related to coronary heart disease. It is a measure of longitudinal care, which may not have any statistical correlation with heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVHRS1:
+{
+    "explanation": "Providing care or assistance hours per week shows a possible correlation with coronary heart disease, but the categories are subjective and may not represent a clear numerical value. However, it still can be a useful feature, especially if there are notable differences in patient outcomes among categories.",
+    "accepted": True,
+    "mapping_function": lambda value: {"1": 1, "2": 9, "3": 20, "4": 40}.get(value, value),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVPRB1:
+{
+    "explanation": "This feature seems unrelated to coronary heart disease and could be a potential source of noise in the model. The category of a person's main health problem does not directly affect their risk of developing coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVPERS:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature, CRGVPERS, does not provide a clear link to coronary heart disease. The 'Yes' and 'No' values could be used to infer some level of dependence on others for daily care, but this information is not directly related to the presence of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVHOUS:
+Here is the response for the given feature:
+
+{
+    "explanation": "This feature seems minor and might not have a significant impact on predicting coronary heart disease. Household task managing is not a direct factor related to heart health. It's possible that this feature may not have a strong correlation with the outcome.",
+    "accepted": False,
+    "mapping_function": lambda value: None, # since the feature is not accepted, no transformation is needed
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVMST2:
+{
+"explanation": "This feature is not directly related to demographic or health-related data, but it could potentially provide insight into the emotional and social support needs of patients with coronary heart disease. A better understanding of these needs could inform patient care and potentially influence treatment outcomes.",
+"accepted": False,
+"mapping_function": None,
+"category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CRGVEXPT:
+Here is the response:
+
+{
+"explanation": "This feature seems to be related to the respondent's caring responsibilities, which may be a potential risk factor for coronary heart disease. However, the impact is likely to be subtle and not strongly correlated with the disease. Therefore, it can be REJECTED for training.",
+"accepted": False,
+"mapping_function": None,
+"category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIDFCLT2:
+Here is the response:
+
+{
+    "explanation": "This feature is related to visual perception, which is a precursor to the development of coronary heart disease. People with difficulty recognizing friends across the street may have underlying conditions that increase their risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) - 1,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for VIREDIF3:
+{
+    "explanation": "This feature seems to be related to visual impairment, which could be an indirect indicator for heart disease. However, its impact on predicting heart disease is limited and indirect, and subtle correlations are not enough to keep the feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIPRFVS2:
+Here's the response:
+
+
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease as it is related to eye examination history, which may not have a significant correlation with heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VINOCRE2:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature seems to be unrelated to coronary heart disease. The values describe reasons for not visiting an eye care professional, which has no clear correlation with heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIEYEXM2:
+{
+    "explanation": "This feature suggests the last time the patient had an eye exam with dilated pupils. While it's interesting to know, it's not directly related to heart disease and may not have a significant impact on the model's performance. A relationship between heart disease and eye exams is speculative at best. ",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIINSUR2:
+Here is the response:
+
+{
+    "explanation": "The ability to have health insurance coverage for eye care does not seem to have a direct correlation with coronary heart disease. The variable does not provide any meaningful information for predicting the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VICTRCT4:
+{
+    "explanation": "The presence or absence of cataracts has no clear correlation with coronary heart disease. The feature seems to be unrelated to the prediction of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIGLUMA2:
+Here is the response:
+
+{
+    "explanation": "The presence of glaucoma has a potential correlation with cardiovascular disease, but the current feature format is not clear and the values are qualitative.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for VIMACDG2:
+Here is the response:
+
+{
+    "explanation": "Age-related macular degeneration is a condition that is unrelated to coronary heart disease, and therefore is unlikely to be a useful feature in predicting it.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CIMEMLOS:
+Here is the response for the feature CIMEMLOS:
+
+
+
+
+{
+    "explanation": "CIMEMLOS is a crucial feature in predicting coronary heart disease, as it is a significant indicator of cognitive decline, which is a risk factor for cardiovascular diseases. The presence of confusion or memory loss may indicate an underlying condition that increases the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(1) if x in ['1'] else int(0),
+    "category": "Numerical"
+}
+
+Note: The feature is accepted because it has a clear biological relevance to coronary heart disease, and the mapping function is used to convert the categorical values to numerical ones for the model to process.
+--------------------------------------------------------------------------------
+Response for CDHOUSE:
+Here is the response:
+
+{
+    "explanation": "This feature is important in predicting coronary heart disease as it assesses the impact of cognitive decline on daily activities, which is a significant indicator of cardiovascular risk.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(',')[0]) if len(x) > 0 else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for CDASSIST:
+Here is the response for the CDASSIST feature:
+
+{
+    "explanation": "This feature captures the level of assistance required for daily activities, which can be an important indicator of overall health and function, which may be related to coronary heart disease. However, the relationship is likely to be indirect and does not directly measure the physical condition of the patient, which is critical for predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CDHELP:
+Here is the response:
+
+{
+    "explanation": "This feature may be correlated to coronary heart disease as it assesses the individual's ability to get help with daily activities, which could influence their overall health condition",
+    "accepted": True,
+    "mapping_function": lambda x: {"Always": 1, "Usually": 0.5, "Sometimes": 0.25, "Rarely": 0, "Never": 0, "Don't know/Not sure": None, "Refused": None, "BLANK": None}[x[0]],
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CDSOCIAL:
+{
+    "explanation": "This feature captures the impact of confusion or memory loss on social activities, which may be related to stress, cognition, and overall well-being. However, its correlation with coronary heart disease may be indirect or affected by other health issues.",
+    "accepted": True,
+    "mapping_function": lambda value: {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5}.get(value),
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CDDISCUS:
+Here is the response:
+
+{
+    "explanation": "This feature could be potentially useful in identifying patients who are experiencing memory loss or confusion, which can be a risk factor for coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x in ['1'] else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for WTCHSALT:
+{
+    "explanation": "This feature seems to be mildly correlated with coronary heart disease, but the association is not strong enough to be relied upon.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LONGWTCH:
+{
+    "explanation": "LONGWTCH is a feature that measures the duration of watching or reducing sodium or salt intake, which could potentially be related to coronary heart disease. However, it is unclear how this feature would provide useful information for predicting the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DRADVISE:
+{
+    "explanation": "This feature is an important predictor of coronary heart disease, as a doctor's advice to reduce sodium or salt intake indicates a level of awareness and concern about the individual's health.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASTHMAGE:
+Here is the response:
+
+{
+    "explanation": "ASTHMAGE does not directly indicate the likelihood of coronary heart disease. It seems to be a description of asthma diagnosis age, which may have a tangential relation to heart disease. However, without more context or correlation analysis, it's unclear how this feature would contribute to the model's accuracy.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ASATTACK:
+Here's the response for the feature:
+
+{
+    "explanation": "This feature may have some correlation with coronary heart disease, but it's not directly related. Asthma attacks are a risk factor for cardiovascular disease, but this feature is likely to have a very weak association with the target variable.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ASERVIST:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be marginally relevant in predicting coronary heart disease, as it indicates the frequency of emergency room/urgent care visits due to asthma. However, it's unclear whether this is a strong risk factor for heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASDRVIST:
+Here is the response:
+
+{
+"explanation": "ASDRVIST seems to be related to patient health-seeking behavior, which might indirectly influence the likelihood of coronary heart disease. However, the relationship appears to be subtle and may not be strong enough to make a significant impact on the model's predictions.",
+"accepted": True,
+"mapping_function": lambda x: int(x.split(' ')[0].strip()) if x != 'BLANK' and x != 'Don’t know/Not sure' else None,
+"category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASRCHKUP:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be related to overall health checks, but it is unclear how it would directly correlate with coronary heart disease risk.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASACTLIM:
+{
+    "explanation": "This feature measures the impact of asthma on daily life, which could be associated with coronary heart disease. However, the relationship is unclear, and more analysis is needed.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ASYMPTOM:
+{
+    "explanation": "This feature might not be directly related to coronary heart disease, and its inclusion might not improve the model's performance. Correlations with coronary heart disease should be significant and explainable for the feature to be accepted.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for ASNOSLEP:
+{
+    "explanation": "This feature seems to be a categorical variable representing the number of days symptoms of asthma made it difficult to stay asleep. It may be related to overall health and sleep quality, which could potentially impact the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x in ["1", "2", "3", "4", "5"] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASTHMED3:
+Here's the response for the given feature:
+
+{
+    "explanation": "The number of days an individual takes a prescribed asthma medication to prevent an asthma attack is a relevant factor in predicting coronary heart disease, as it can indicate underlying lung function and cardiovascular health.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' ')[0]) if value != '7' and value != '8' and value != '9' and value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASINHALR:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a categorical variable, as the values have different labels. It could potentially be useful in predicting coronary heart disease if there is a correlation between the frequency of using prescription asthma inhalers during an asthma attack and the likelihood of developing coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != 'BLANK' and value != 'Section' else None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HAREHAB1:
+{
+    "explanation": "This feature could potentially be an indicator of a patient's willingness to engage in recovery activities, which could be correlated with their overall health. However, the fact that 25% of the values are 'Don't know/Not Sure', 'Refused', or 'Not asked or Missing' suggests that the feature may not be reliable.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for STREHAB1:
+{
+    "explanation": "This feature is not clearly related to the prediction of coronary heart disease, as it is a self-reported outcome (rehabilitation after a stroke) that is unlikely to have a direct impact on the risk of developing coronary heart disease. Therefore, it is not useful.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CVDASPRN:
+{
+    "explanation": "Aspirin usage daily or not may have some association with coronary heart disease, but it is not a clear indication or a well-established risk factor",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == "1" else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ASPUNSAF:
+Here is the response:
+
+{
+    "explanation": "This feature is moderately important in predicting coronary heart disease, as it captures potential obstacles to aspirin therapy, which is a crucial treatment for cardiovascular disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value in ['1', '2'] else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for RLIVPAIN:
+Here is the response:
+
+{
+    "explanation": "This feature seems to capture non-cardiac pain relief habits. While it might have some distant relation to coronary heart disease, it's unclear how taking aspirin for pain relief would directly influence coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for RDUCHART:
+{
+    "explanation": "Taking aspirin to reduce the chance of heart attack is a relevant aspect, but as this feature is categorical with many NaN/Missing values (No answer/Refused/Don't know/Not asked), it is not very clear that it can effectively predict coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for RDUCSTRK:
+Here is the response for the given feature:
+
+{
+    "explanation": "This feature seems to be related to the risk of heart disease, but it's not clear if it's a significant predictor. The feature is categorical, and the values are not ordered in a way that would suggest a numerical representation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ARTTODAY:
+Here is the response in the specified format:
+
+{
+    "explanation": "ARTTODAY appears to be related to overall physical ability, which may be indirectly related to coronary heart disease. However, the relationship is subtle and likely not strong enough to include in the model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ARTHWGT:
+Here is the response:
+
+{
+    "explanation": "While this feature seems unrelated to coronary heart disease, it's still worth exploring as it might provide some insights.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ARTHEXER:
+{
+    "explanation": "This feature measures the relationship between physical activity and arthritis or joint symptoms. It may not directly affect coronary heart disease, making it less relevant in predicting it.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ARTHEDU:
+Here is the response for the feature "ARTHEDU":
+
+{
+    "explanation": "This feature seems unrelated to coronary heart disease. Taking an educational course to manage arthritis or joint symptoms is not a direct risk factor for coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for TETANUS:
+{
+    "explanation": "This feature appears to capture information about tetanus shots received, but without further context or exploration of the data, it is unclear how this information directly relates to coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HPVADVC2:
+{
+    "explanation": "This feature seems irrelevant to coronary heart disease prediction as HPV vaccination does not have a direct correlation with heart health.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HPVADSHT:
+{
+    "explanation": "This feature may not be directly correlated with coronary heart disease, as it is about HPV shots, which is unrelated to heart health. Therefore, it's not useful for predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SHINGLE2:
+Here is the response for the feature SHINGLE2:
+
+{
+    "explanation": "This feature is unlikely to be strongly related to coronary heart disease as it relates to a vaccine and not a direct risk factor for the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HADMAM:
+Here is the response:
+
+{
+    "explanation": "This feature is not directly related to coronary heart disease, as it is about mammograms and breast cancer. While there might be some indirect correlation, the relationship is weak and not clear.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HOWLONG:
+{
+    "explanation": "The length of time since last mammogram has a slight correlation with coronary heart disease, but it is likely unreliable due to confounding variables.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HADPAP2:
+Here is the response:
+
+{
+    "explanation": "This feature does not have a direct relevance to coronary heart disease. The Pap test is used to detect cervical cancer, not coronary heart disease. It is not a useful feature for predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LASTPAP2:
+{
+    "explanation": "This feature seems to be unrelated to coronary heart disease. The values represent time intervals since the last Pap test, which is not likely to be a factor in heart disease risk.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HPVTEST:
+Here is the response:
+
+{
+    "explanation": "Based on the provided information, it's unclear how this feature is related to coronary heart disease. There is no evident correlation between having an HPV test and heart disease. Therefore, this feature may not be a strong predictor of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HPLSTTST:
+{
+    "explanation": "The 'HPLSTTST' feature does not seem to be directly related to coronary heart disease. The values are categories of time since the last HPV test, which is not a recognized risk factor for coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HADHYST2:
+Here is the response:
+
+{
+    "explanation": "Although having a hysterectomy might have some correlation with coronary heart disease, it is not a clear determining factor. The data also has missing values and unknown categories. Therefore, it's not strongly related to the prediction of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PROFEXAM:
+{
+"explanation": "This feature is not relevant to coronary heart disease prediction, as it is about a clinical breast exam which is not related to the heart.",
+"accepted": False,
+"mapping_function": lambda x: None,
+"category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LENGEXAM:
+Here is the response in the required format:
+
+                
+{
+    "explanation": "This feature seems irrelevant in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+
+Note: I have rejected the feature as it is not directly related to the disease being predicted (coronary heart disease) and the values are categorized based on time periods, which doesn't seem to have any correlation with the disease.
+--------------------------------------------------------------------------------
+Response for BLDSTOOL:
+Here is the response for the BLDSTOOL feature:
+
+{
+    "explanation": "This feature provides information on a patient's experience with blood stool tests, which may be related to coronary heart disease. However, it does not seem to have a direct causal link to the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LSTBLDS3:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be capturing the timing of a blood stool test, which may not have any significant correlation with coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for HADSIGM3:
+{
+    "explanation": "Sigmoidoscopy and colonoscopy are not directly related to coronary heart disease. However, the exam may be related to overall health, which could be indirectly related to the risk of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": lambda x: None, # This feature does not seem to be directly useful for predicting coronary heart disease, so it's mapping function is returned as None
+    "category": "Categorical" # The values are categorical, but the feature is not useful for predicting coronary heart disease
+}
+--------------------------------------------------------------------------------
+Response for HADSGCO1:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a relevant indicator for coronary heart disease, as it provides information about the type of colonoscopy exam performed.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for LASTSIG3:
+Here is the response:
+
+{
+    "explanation": "LASTSIG3 does not seem to be a clear indicator of coronary heart disease. The range of values suggests that this could be a categorical feature, but the labels provided do not indicate a clear ordinal relationship. The values also include 'Don’t know/Not sure' and 'Refused' which may not be useful for training a model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PCPSAAD2:
+Here is the response in the requested format:
+
+{
+    "explanation": "This feature is important to consider as it may provide insights into patients' awareness and adherence to risk-reducing behaviors, which can be indicative of a higher risk of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PCPSADI1:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature may not be directly related to coronary heart disease diagnosis and may only be a proxy for a patient's awareness or understanding of certain medical issues.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PCPSARE1:
+{
+    "explanation": "This feature measures whether a doctor, nurse, or health professional has ever recommended a PSA test. Although PSA tests can be associated with cardiovascular health, this feature seems to be unrelated to coronary heart disease. The values are categorical and don't provide any numerical information.",
+    "accepted": False,
+    "mapping_function": lambda x: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PSATEST1:
+{
+    "explanation": "The PSA test feature seems to be a yes/no question, which may not directly contribute to predicting coronary heart disease. Coronary heart disease is influenced by biological and lifestyle factors, and a PSA test is a medical screening tool for prostate cancer. The correlation, if any, is likely to be indirect and weak.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PSATIME:
+Here is the response in the specified format:
+
+{
+    "explanation": "PSATIME is not a relevant feature for predicting coronary heart disease as it is not a risk factor for developing the disease. The time since the last PSA test does not have any correlation with coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+
+Note that I have rejected the feature as it does not seem to have any correlation with coronary heart disease. I also did not provide a mapping function as the feature does not need any transformations to be useful (if it were accepted, which it's not). The category is categorical as the order of the values does not matter.
+--------------------------------------------------------------------------------
+Response for PCPSARS1:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be related to the reason for a PSA test, which is unlikely to be directly related to coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PCPSADE1:
+Here is the response:
+
+{
+    "explanation": "This feature does not provide any direct information about the patient's risk of developing coronary heart disease. It is a proxy measure of the patient's decision-making process, which is not strongly related to heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PCDMDECN:
+{
+    "explanation": "This feature captures the decision-making involvement of the respondent in their health-related decisions. While it may seem unconnected to coronary heart disease, social support and health decision-making involvement can have an impact on health outcomes. However, the specific categories provided do not appear to have a direct causal link to heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: value if value in ["12-4328", "BLANK", "is", "or"] else int(value.split("-")[0]) if value.startswith("12-") else value,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for SCNTMNY1:
+Here is the response:
+
+{
+    "explanation": "This feature measures financial stress, which can be a significant risk factor for coronary heart disease. It's relevant to include this feature in the model, as financial stress can contribute to increased blood pressure, anxiety, and depression, all of which are known to increase the risk of heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: x,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SCNTMEL1:
+{
+    "explanation": "This feature seems to be related to stress levels and financial concerns, which are potentially relevant factors in coronary heart disease. However, the correlation is not immediately clear, and more analysis is needed to determine the significance of this feature.",
+    "accepted": True,
+    "mapping_function": lambda value: int([value[0] for value in [(value, value) for value in [[str(x) for x in range(6)] + ['7', '8', '9', 'BLANK']] if value[0] in [str(x) for x in range(6)]]][[str(x) for x in range(6)].index(value)][0]),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for SCNTPAID:
+{
+    "explanation": "This feature may be correlated with coronary heart disease, as those who are paid by salary may have a different socioeconomic status or work environment compared to those paid by the hour or by job/task.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else (0.5 if x == '2' else (0.2 if x == '3' else (0.1 if x == '4' else None))),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for SCNTWRK1:
+{
+    "explanation": "SCNTWRK1 is related to the physical activity of the individual, which is a known risk factor for coronary heart disease. However, the categorical nature of the feature and the inconsistent labeling ('Hours (1-96 or more) --- -Go to next module', 'Don’t know/Not Sure --- -Go to next module', etc.) makes it difficult to extract meaningful information.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SCNTLPAD:
+{
+    "explanation": "This feature seems to describe a professional attribute, but it's not clear how it's related to coronary heart disease. Without further analysis, it's unclear whether there's a meaningful correlation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SCNTLWK1:
+{
+    "explanation": "This feature seems to capture the amount of work an individual does per week. However, it may not be directly related to coronary heart disease. The variable has many non-numerical values, which might add noise to the data.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for SXORIENT:
+Here is the response:
+
+{
+    "explanation": "This feature provides demographic information about the individual's sexual orientation, which may have some correlation with coronary heart disease. However, it is unclear how the sexual orientation would impact the likelihood of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for TRNSGNDR:
+{
+"explanation": "The feature TRNSGNDR is not directly related to coronary heart disease, as it is a variable related to gender identity. Therefore, it is unlikely to be a useful predictor of coronary heart disease.",
+"accepted": False,
+"mapping_function": None,
+"category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for RCSGENDR:
+{
+    "explanation": "RCSGENDR is a demographic feature that may have some correlation with coronary heart disease, but it's a simple categorical variable and may not add significant value to the model.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for RCSRLTN2:
+{
+    "explanation": "This feature does not provide any relevant information about the individual's likelihood of having coronary heart disease. It describes the relationship between the individual and a child, which does not have a direct correlation with coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CASTHDX2:
+Here is the response:
+
+{
+    "explanation": "This feature is not relevant to predicting coronary heart disease as it is about a child having asthma, not coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for CASTHNO2:
+{
+    "explanation": "This feature is not clearly relevant to coronary heart disease and does not provide sufficient information to make a prediction.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EMTSUPRT:
+Here is the response for the feature EMTSUPRT:
+
+{
+    "explanation": "This feature measures the level of social and emotional support an individual receives. High levels of social support have been linked to better health outcomes, but its relationship with coronary heart disease is unclear. However, considering the inconsistent nature of the values (categorical, with some meaningless values like 'Don’t know/Not sure' and 'Refused'), it's unclear whether this feature would add significant predictive power to the model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for LSATISFY:
+{
+    "explanation": "LSATISFY does not seem to have a clear relation with coronary heart disease. The values are subjective and might not be quantifiable. Moreover, it might be influenced by various personal factors that are not directly related to the heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ADPLEASR:
+{
+    "explanation": "This feature measures a patient's symptoms of depression, which are a risk factor for coronary heart disease. A higher value in this feature indicates a greater likelihood of the patient experiencing depression symptoms.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split('-')[0]),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADDOWN:
+{
+    "explanation": "This feature captures the level of depression symptoms, which has been linked to increased risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value[0].split(' - ')[0]),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADSLEEP:
+Here is the response:
+
+{
+    "explanation": "ADSLEEP is a potential indicator of sleep quality, which can be related to stress levels, physical inactivity, and other factors that can increase the risk of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": lambda x: None,  # No clear transformation needed, but the feature is not strong enough to be useful without further analysis
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ADENERGY:
+Here is the response for the ADENERGY feature:
+
+{
+    "explanation": "ADENERGY is a relevant feature in predicting coronary heart disease, as fatigue is a common symptom of the disease. Individuals who experience fatigue may be more likely to develop cardiovascular disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' ')[0].strip()) if value != 'BLANK' and value != '88' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADEAT1:
+Here is the response:
+{
+    "explanation": "This feature may not be a strong predictor of coronary heart disease, as it only measures appetite or eating habits over a short period. Other factors may be more important determinants of heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADFAIL:
+Here is the response:
+
+{
+    "explanation": "ADFAIL seems to capture a psychological aspect of coronary heart disease, possibly indicating stress and low self-esteem. While not directly related to the heart, it could be a contributing factor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ADTHINK:
+Here is the response:
+
+{
+    "explanation": "This feature may be useful in predicting coronary heart disease as it provides information on the individual's mental health and ability to concentrate over a period of time, which could be related to cardiovascular risk factors.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(' - ')[0]) if x != '88' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADMOVE:
+{
+    "explanation": "This feature captures patient behavior over the last 2 weeks, which could indicate underlying health issues that might be related to coronary heart disease. The answers are not necessarily binary (yes/no) and the distribution of values is varied, making it relevant for predicting coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' ')[0]) if value != '88' and value != '77' and value != '99' and value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MISTMNT:
+Here's the response for the MISTMNT feature:
+
+{
+    "explanation": "This feature seems to capture the patient's mental health condition, which might have a potential correlation with the risk of coronary heart disease, as recent studies show a strong link between mental health and cardiovascular health.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ADANXEV:
+Here is the response:
+
+{
+    "explanation": "Anxiety disorders are a potential risk factor for coronary heart disease. Previous studies have shown that patients with anxiety disorders are at a higher risk of developing cardiovascular disease. Therefore, this feature can be useful in predicting the likelihood of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for QSTVER:
+Here is the response:
+
+{
+    "explanation": "This feature does not seem to have any direct correlation with coronary heart disease. It appears to be an identifier for different questionnaire versions, which is unlikely to have a significant impact on the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for QSTLANG:
+{
+    "explanation": "The language identifier (QSTLANG) feature does not have a clear correlation with coronary heart disease. It may not be a useful predictor of the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXACTOT1:
+{
+    "explanation": "This feature is a categorical indicator of the first activity other response description, and its values are limited to 'HIDDEN'. It does not provide any useful information for predicting coronary heart disease, and its lack of variation makes it unusable.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for EXACTOT2:
+{
+    "explanation": "Rejecting the feature as it contains categorical values without any apparent linear relationship with the target variable Coronary Heart Disease. The values are in the format of activity descriptions, which are not numerical and can't be easily mapped to a numerical representation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical" 
+}
+--------------------------------------------------------------------------------
+Response for MSCODE:
+Here is the response for the MSCODE feature:
+
+{
+    "explanation": "This feature identifies the metropolitan status of an individual, which may have some correlation with coronary heart disease as it relates to urban vs. rural living conditions, access to healthcare, and potential environmental factors.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 2 if x == '2' else 3 if x == '3' else 4,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _STSTR:
+Here is the response:
+
+{
+    "explanation": "This feature appears to be a type of categorical variable, as it is a combination of state and geographic stratification. While it may share some subtle correlations with other features, it is not clear whether it is a strong predictor of coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _STRWT:
+{
+    "explanation": "The feature _STRWT is a stratum weight, which may not be a directly meaningful feature in predicting coronary heart disease. Its impact on the model is unclear without further exploration.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _RAWRAKE:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a rough estimate of household size and does not appear to have a direct correlation with coronary heart disease. It might be worth further investigation, but without clear evidence of importance, its value as a feature is uncertain.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _WT2RAKE:
+{
+    "explanation": "This feature does not seem to be directly related to coronary heart disease. Its values are not clear, indicating a complex calculation. Therefore, its importance in predicting coronary heart disease is unclear.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _CHISPNC:
+{
+    "explanation": "This feature appears to be irrelevant in predicting coronary heart disease as it is a demographic variable unrelated to the disease's risk factors.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _CRACE1:
+Here is the response:
+
+{
+    "explanation": "_CRACE1 may have some role in predicting coronary heart disease, but its impact is likely to be indirect and limited. The categories mainly capture racial/ethnic identity, which may have some correlation with heart disease risk, but not enough to be strongly predictive.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for _CPRACE:
+Here is the response:
+
+{
+    "explanation": "The preferred Child Race Categories feature seems to provide some insight into the general demographics of the patients, but it's unclear how much correlation there is with coronary heart disease. Further analysis is needed to determine the significance of this feature.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(',')[0]) if x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _CLLCPWT:
+{
+    "explanation": "This feature does not seem to have any clear correlation with coronary heart disease. The values are categorical, indicating the weight of a child (via phone data), but do not provide any meaningful information to contribute to the prediction of heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _DUALUSE:
+{
+    "explanation": "The feature _DUALUSE is related to dual phone use categories, which does not seem to be directly related to coronary heart disease. Therefore, it is unlikely to be a strong predictor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _DUALCOR:
+{
+    "explanation": "This feature seems to be of little importance in predicting coronary heart disease as it's labeled as 'HIDDEN' without providing any context about its significance.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _LLCPWT:
+{
+    "explanation": "This feature is unlikely to be useful in predicting coronary heart disease as it is a raking derived weight, which may be related to the method of contacting respondents rather than any actual risk factors for heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _RFHLTH:
+{
+    "explanation": "This feature measures the reported health of the adults. While it may seem relevant to coronary heart disease, it is too subjective and lacks a clear correlation with the target variable.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _HCVU651:
+Here is the response in the specified format:
+
+{
+    "explanation": "Healthcare coverage is a potential risk factor for coronary heart disease. Presence of healthcare coverage may allow earlier detection and treatment of risk factors, which can reduce the risk of heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _RFHYPE5:
+Here is the response:
+
+{
+    "explanation": "This feature is likely to be correlated with coronary heart disease, as high blood pressure is a known risk factor. However, the values are in a form that is not directly usable for the model, so some transformation is required.",
+    "accepted": True,
+    "mapping_function": lambda value: 0 if value == '2' else 1,
+    "category": "Numerical"
+}
+
+Note that I transformed the values to binary (0 for no, 1 for yes) for use in the model, as this is a common technique for binary features.
+--------------------------------------------------------------------------------
+Response for _CHOLCHK:
+Here is the response:
+
+{
+    "explanation": "This feature is not directly related to cholesterol levels, but rather indicates whether a person has had a cholesterol check in the past. This information is likely to be useful in prediction, as it may indicate a higher level of awareness and interest in heart health.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value in ["1"] else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _RFCHOL:
+Here's the response in the specified dictionary format:
+
+{
+    "explanation": "This feature indicates whether a person has been told by a doctor, nurse, or other health professional that their cholesterol is high. While it might seem related to coronary heart disease, the values are categorical and the correlations might be subtle. Therefore, I recommend rejecting this feature for training.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _MICHD:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature is likely to be important in predicting coronary heart disease as it directly indicates whether the respondent has ever reported having coronary heart disease (CHD) or myocardial infarction (MI).",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _LTASTH1:
+Here is the response:
+
+{
+    "explanation": "The relationship between asthma and coronary heart disease is well-established. Adults who have ever been told they have asthma are likely to have a higher risk of developing coronary heart disease. This feature is important for predicting the disease.",
+    "accepted": True,
+    "mapping_function": lambda value: 1 if value == '2' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _CASTHM1:
+{
+    "explanation": "This feature might not have a direct correlation with coronary heart disease, but it could be a potential indicator of other health problems. E.g., having asthma might increase the risk of heart disease, so it's worth considering.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '2' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _ASTHMS1:
+{
+    "explanation": "This feature appears to be a categorical variable measuring the computed asthma status, which is not directly related to coronary heart disease and may not be a significant predictor. It's unclear how this variable is computed or what its underlying values represent.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _DRDXAR1:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be indirectly related to the risk of coronary heart disease, as it is related to the overall health of the individual.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PRACE1:
+Here is your response:
+
+{
+    "explanation": "This feature captures the preferred race category of individuals. While it might seem relevant to coronary heart disease, it is unlikely to have a direct correlation. However, it could potentially be used to identify groups that may be more prone to the disease. Further investigation is needed to confirm the relationship.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _MRACE1:
+{
+    "explanation": "This feature seems to capture the patient's racial category, which could be relevant in understanding the likelihood of developing coronary heart disease. The feature is categorical as it provides predefined labels for each value.",
+    "accepted": True,
+    "mapping_function": lambda value: value,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _HISPANC:
+{
+    "explanation": "This feature may not be directly related to coronary heart disease, as it only indicates Hispanic, Latino/a, or Spanish origin. Its inclusion could lead to irrelevant information and potential bias in the model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RACE:
+Here is the response in the specified format:
+
+{
+    "explanation": "The race/ethnicity feature may have some correlation with coronary heart disease, however, the value labels are description and do not provide a clear numerical or categorical mapping to the disease's prognosis.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RACEG21:
+Here is the response for the feature _RACEG21:
+
+{
+    "explanation": "_RACEG21 seems to be a categorical feature with three possible values: Non-Hispanic White, Non-White or Hispanic, and Don’t know/Not sure/Refused. While it may be interesting for some studies, it's unclear how well this feature will help in predicting coronary heart disease. The prediction model may benefit from more direct explanations like age, gender, and other clear health indicators.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RACEGR3:
+{
+    "explanation": "This feature provides valuable information about the patient's demographic characteristics, particularly their ethnicity. While the categories may not have a direct correlation with the risk of coronary heart disease, understanding the patient's ethnic background can help identify potential disparities in healthcare outcomes.",
+    "accepted": True,
+    "mapping_function": lambda value: value,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RACE_G1:
+Here is the response:
+
+{
+    "explanation": "This feature doesn't seem to have a clear relationship with coronary heart disease, and the values seem to be more related to demographic variables rather than the disease itself. The information provided doesn't suggest a strong correlation or predictive power of this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _AGEG5YR:
+{
+    "explanation": "Age is a well-established risk factor for coronary heart disease, so this feature is likely to be important in predicting the outcome.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x),
+    "category": "Numerical"
+}
+
+Note that the `mapping_function` is simply converting the age string to an integer, as it is a numerical feature. The `category` is set to "Numerical" as the order of the values matters in this feature (i.e., the risk of coronary heart disease increases with age).
+--------------------------------------------------------------------------------
+Response for _AGE65YR:
+{
+    "explanation": "This feature seems to be a categorical representation of age category, which is not clearly related to coronary heart disease. Without further investigation, it appears to be an unnecessary feature.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _AGE80:
+{
+    "explanation": "Age up to 80 is a clear risk factor for coronary heart disease, but imputing age above 80 and categorizing it does not provide clear information.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _AGE_G:
+{
+    "explanation": "Age is a significant risk factor for coronary heart disease. A clearer age category is crucial for accurate predictions.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for HTIN4:
+{
+    "explanation": "This feature is reported height in inches, which can potentially be related to coronary heart disease as taller individuals may be at a higher risk. However, without further analysis and consideration of the correlations with other features, this feature is not clearly useful and should be rejected.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for HTM4:
+Here is the response:
+
+{
+    "explanation": "HTM4 (Height in meters) seems to be a useful feature in predicting coronary heart disease, as it is a common risk factor associated with CHD.",
+    "accepted": True,
+    "mapping_function": lambda x: float(x.strip().replace(" - ", ".")),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for WTKG3:
+Here is the response in the requested format:
+
+
+{
+    "explanation": "WTKG3 (reported weight in kilograms) is a weak predictor for coronary heart disease. A high weight is a known risk factor, but this feature does not provide meaningful information for the model to improve its predictions.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+
+I rejected WTKG3 because it does not seem to have a clear correlation with coronary heart disease. The feature does not provide any substantial information other than a rough indicator of being overweight or underweight.
+--------------------------------------------------------------------------------
+Response for _BMI5:
+{
+    "explanation": "_BMI5 is a numerical feature that can provide valuable information about the patient's weight status. A higher BMI can be an indicator of a higher risk for coronary heart disease. However, the values are not actual numerical values but rather categorical labels. Without actual numerical BMI values, this feature provides limited information.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _BMI5CAT:
+{
+    "explanation": "While BMI may be a relevant risk factor for coronary heart disease, the categorical BMI categories provided may not be useful for machine learning. There are many confounding variables not captured by these categories, such as waist circumference and muscle composition, that could affect the relationship between BMI and coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for _RFBMI5:
+{
+    "explanation": "This feature is relevant to coronary heart disease as it indicates an individual's weight status.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '2' else 0,
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for _CHLDCNT:
+Here is the response:
+
+{
+    "explanation": This variable, _CHLDCNT, seems to be related to personal life, but it is not clear how it would directly affect coronary heart disease. A household with more children may have a different lifestyle, income, or stress level, but the relationship is indirect.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+--------------------------------------------------------------------------------
+Response for _EDUCAG:
+Here is the response:
+
+{
+    "explanation": "The educational level of an individual is a potential factor in predicting their risk of coronary heart disease, as indicated by various studies.",
+    "accepted": True,
+    "mapping_function": lambda value: {"1": 1, "2": 2, "3": 3, "4": "4", "9": 0}[value] if value in {"1", "2", "3", "4", "9"} else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _INCOMG:
+Here is the response:
+
+{
+    "explanation": "The income category feature does not appear to have a clear correlation with coronary heart disease. Its inclusion may add noise to the model and dilute its predictive power.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _SMOKER3:
+Here is the response for the feature _SMOKER3:
+
+{
+    "explanation": "This feature seems to be clearly useful in predicting coronary heart disease, as smoking is a known risk factor for the condition.",
+    "accepted": True,
+    "mapping_function": lambda x: x,
+    "category": "Categorical"
+}
+
+Note: Since the values are categorical (states of being a smoker), I will keep the original values as strings and not perform any transformation.
+--------------------------------------------------------------------------------
+Response for _RFSMOK3:
+{
+    "explanation": "This feature appears to be categorical, indicating the presence or absence of current smokers. While smoking is a well-known risk factor for heart disease, this feature does not seem to capture the degree or intensity of smoking. The binary nature of this feature might not be useful in predicting the complexity of heart disease. Therefore, I recommend rejecting this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DRNKANY5:
+{
+    "explanation": "The relationship between drinking frequency and coronary heart disease is complex and may include both positive and negative effects.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for DROCDY3_:
+Here is the response:
+
+{
+    "explanation": "Although the feature 'DROCDY3_' shows some correlation with coronary heart disease, it is highly subjective and not a reliable indicator. The values are based on self-reported drinking occasions per day, which can be unreliable and prone to survivorship bias. Therefore, it is recommended to REJECT this feature for training.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RFBING5:
+{
+    "explanation": "This feature seems to be related to the frequency of binge drinking, which could be an important factor in predicting coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split()[0]),
+    "category": "Numerical"
+--------------------------------------------------------------------------------
+Response for _DRNKWEK:
+Here is the response:
+
+{
+    "explanation": "The total number of alcoholic beverages consumed per week may not have a direct causal relationship with coronary heart disease. However, as an indicator of behavior and potential lifestyle factors, it could be of interest.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != '0' and value != '99900' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _RFDRHV5:
+Here is the response for the feature _RFDRHV5:
+
+{
+    "explanation": "Heavy drinking is a well-established risk factor for coronary heart disease. This feature is important in predicting the likelihood of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: "Yes" if value == "2" else "No",
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for FTJUDA1_:
+{
+    "explanation": "This feature measures fruit juice intake in times per day, which is a potential risk factor for coronary heart disease. It's likely that a higher frequency of fruit juice intake is associated with a higher risk of developing coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FRUTDA1_:
+{
+    "explanation": "FRUTDA1 does not appear to have a clear correlation with coronary heart disease, since it covers a wide range of fruit intake values without any indications of a specific range being more relevant.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for BEANDAY_:
+{
+    "explanation": "Bean intake has no clear correlation with coronary heart disease. This feature does not seem to provide any valuable information for predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for GRENDAY_:
+Here is the response:
+
+{
+    "explanation": "GRENDAY_ is a numerical feature that measures dark green vegetable intake in times per day. While it is possible that this feature may have some correlation with coronary heart disease, it is not clear how this feature would contribute to a predictive model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ORNGDAY_:
+{
+    "explanation": "ORNGDAY_ seems to be a rough indicator of daily habits, but it's unclear how it's directly related to coronary heart disease. Without further investigation, it's not clear what Orange-colored vegetable intake, specifically, does to increase the risk of having coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for VEGEDA1_:
+{
+    "explanation": "This feature is related to the frequency of vegetable intake, which is likely to be associated with a healthier lifestyle, potentially lowering the risk of coronary heart disease. However, the scale is a broad range (0-9999 times per day), making it less meaningful.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _MISFRTN:
+Here is the response:
+
+{
+    "explanation": "This feature does not seem to have a clear correlation with coronary heart disease. The values are binary ( existence or non-existence of missing fruit responses) and may not provide any meaningful information to improve the model's accuracy.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _MISVEGN:
+Here is the response:
+
+{
+    "explanation": "_MISVEGN is not clearly relevant to predicting coronary heart disease. It seems to be a count of missing vegetable responses, which is likely an artifact of data collection rather than a meaningful predictor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _FRTRESP:
+Here's the response for the feature _FRTRESP:
+
+
+{
+    "explanation": "This feature is not relevant to predicting coronary heart disease. The values represent whether fruit responses were included or not, which is not a risk factor for heart disease.",
+    "accepted": False,
+    "mapping_function": "lambda value: 0 if value == '0' else 1", 
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _VEGRESP:
+Here is the response:
+
+{
+    "explanation": "The presence or absence of missing vegetable responses is unlikely to have a direct impact on coronary heart disease. This feature seems to capture noise or outliers rather than meaningful information for prediction.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _FRUTSUM:
+{
+    "explanation": "The total fruits consumed per day is unlikely to have a significant correlation with coronary heart disease, and accepting this feature would not provide significant information for predicting the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _VEGESUM:
+{
+    "explanation": "This feature is not directly correlated with coronary heart disease, and the data is categorical rather than numerical. Although the total vegetables consumed per day might be a health factor, its impact is likely indirect and may not be measured by this single variable. This feature should be REJECTED for training.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _FRTLT1:
+{
+    "explanation": "This feature indicates the frequency of consuming fruit, which may be related to overall diet and lifestyle. However, the categories are quite general and may not provide much specific information about the consumer's habits.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _VEGLT1:
+Here is the response:
+
+{
+    "explanation": "While it might seem intuitive to include a feature about consuming vegetables in predicting coronary heart disease, the binary response is not helpful in identifying correlations. Additionally, it only provides information about frequency, not quality or quantity of vegetable consumption. Without more specific information, this feature is not useful in predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _FRT16:
+{
+    "explanation": "This feature seems to represent a binary variable, where 1 indicates reported consumption of fruits >16 per day and 0 indicates otherwise. While it's possible that consuming fruits could have a correlation with coronary heart disease, this specific variable may not be a direct or strong correlation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _VEG23:
+{
+    "explanation": "This feature is not clearly useful in predicting coronary heart disease. It's just a simple binary feature indicating whether someone consumes vegetables more or less than 23 per day. The correlation between this feature and coronary heart disease might be subtle, and it might not provide any meaningful information for prediction.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _FRUITEX:
+{
+    "explanation": "The Fruit Exclusion from analyses feature seems to categorize the fruit responses into three categories, indicating whether there are missing values, values out of range, or no missing values within an accepted range. This feature may have some limited value in identifying potential coronary heart disease risks, but its relevance is somewhat unclear and warrants further investigation.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _VEGETEX:
+Here is the response:
+
+{
+    "explanation": "The vegetable exclusion feature seems to have limited predictive value and only represents whether the vegetable responses are missing or not, or if they are outside the accepted range. This information may not be directly related to coronary heart disease, making it less important for the model.",
+    "accepted": False,
+    "mapping_function": lambda value: None, 
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _TOTINDA:
+Here is the response in the specified format:
+
+{
+    "explanation": "This feature could be relevant to heart disease as regular physical activity is known to reduce the risk of cardiovascular disease. However, the 'no activity' value being the second option makes the feature less significant and more prone to biases. ",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for METVL11_:
+{
+    "explanation": "The feature METVL11_ is a numerical value representing activity MET, which measures the intensity of physical activity. A link between physical activity and coronary heart disease risk has been established. This feature may be useful in predicting coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for METVL21_:
+{
+    "explanation": "The METVL21 feature is an activity measurement, which might be related to physical activity levels. Higher MET values generally indicate greater intensity of physical activity.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x != "BLANK" else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for MAXVO2_:
+{
+    "explanation": "MAXVO2_ is a physiological measure that reflects an individual's overall fitness level and cardiovascular efficiency. Higher values of MAXVO2_ are generally associated with better cardiovascular health. As heart disease is often linked to decreased physical fitness and cardiovascular function, MAXVO2_ may be a strong predictor of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: float(value.replace('-', '')),
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for FC60_:
+{
+    "explanation": "This feature, Estimated Functional Capacity, seems to be a measure of physical capability and may be related to the risk of coronary heart disease, especially in regards to physical activity level and lifestyle choices.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split()[0]) if x != '99900' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for ACTIN11_:
+{
+    "explanation": "This feature seems to capture the intensity of physical activity, which may have a subtle correlation with coronary heart disease. However, the correlation is not strong, and the feature is not a well-established risk factor.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for ACTIN21_:
+{
+    "explanation": "This feature provides information about the activity intensity, which is an important factor in heart disease prediction. It estimates the activity level, which can help identify individuals with moderate or vigorous physical activity and those with less or no physical activity.",
+    "accepted": True,
+    "mapping_function": lambda x: 0 if x in ['0'] else 1 if x in ['1'] else 2 if x in ['2'] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PADUR1_:
+{
+    "explanation": "This feature seems to be the minutes of first activity, which might be useful in identifying individuals with higher or lower levels of physical activity, which could be a risk factor for coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(" ")[0].strip("0-")) if value != "BLANK" else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PADUR2_:
+Here is the response:
+
+{
+    "explanation": "This feature is unlikely to be important in predicting coronary heart disease, as it only captures physical activity in a single block of time. Other factors like overall physical activity levels, diet, and genetics more strongly influence the risk of developing the disease.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+```
+Please note that I'm being harsh and rejecting this feature because it doesn't seem to have a clear correlation with the target variable.
+--------------------------------------------------------------------------------
+Response for PAFREQ1_:
+{
+    "explanation": "This feature is expected to be a proxy for coronary heart disease risk factors such as physical fitness and overall lifestyle. Increased physical activity is likely to have a positive impact on heart health.",
+    "accepted": true,
+    "mapping_function": lambda x: int(x.split(' - ')[0]) if x != 'Don’t know/Not Sure/Refused' and x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PAFREQ2_:
+{
+    "explanation": "PAFREQ2_ is a weak feature in predicting coronary heart disease as it only captures physical activity frequency for a second activity, which might not be relevant in the overall context of cardiovascular health. The 'Don’t know/Not Sure/Refused' and 'Not asked or Missing' responses are likely to be noise and should be excluded from training.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _MINAC11:
+Here is the response:
+
+{
+    "explanation": "_MINAC11 seems to be a weak indicator of coronary heart disease. While physical activity is a well-known risk factor, the format of this feature (values are categories) doesn't provide enough information to accurately predict CHD.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _MINAC21:
+{
+    "explanation": "This feature seems to be related to the overall physical activity of the individual, which has been linked to a reduced risk of coronary heart disease. Therefore, it is expected to be important in predicting the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for STRFREQ_:
+{
+    "explanation": "This feature measures the frequency of strength activities per week, which could be a potential indicator of physical inactivity and increased risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: float(value.split(" ")[0].strip()) if value not in ["'99000'", "'BLANK'"] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PAMISS1_:
+{
+    "explanation": "This feature captures the missing physical activity data, which may be relevant in predicting coronary heart disease. However, it's unclear how the missing data is distributed and how it's related to the outcome.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for PAMIN11_:
+Here is the response:
+
+{
+    "explanation": "PAMIN11_ is moderately correlated with coronary heart disease, but a more nuanced analysis is required. The distribution of physical activity levels is relevant in that it can be an independent predictor of CHD risk, but more context is needed to fully assess its importance.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split(' - ')[0]) if value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PAMIN21_:
+{
+    "explanation": "This feature seems to capture some information about physical activity, which is a well-established risk factor for coronary heart disease. However, the distinct categories (0 - 99999 and BLANK/Not asked or Missing) may not be continuous enough to provide useful predictions.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PA1MIN_:
+{
+    "explanation": "Physical activity is an important factor in coronary heart disease. Higher levels of physical activity are generally associated with a lower risk of developing CHD. This feature is likely to be useful in predicting CHD, especially in relation to other physical activity-related features.",
+    "accepted": True,
+    "mapping_function": lambda x: int(float(x.split()[0])) if x != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PAVIG11_:
+Here is the response:
+
+{
+    "explanation": "This feature appears to be a measure of physical activity level, which is a well-established risk factor for coronary heart disease. It's likely to be important in predicting the disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value.split('-')[0]) if value != 'BLANK' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PAVIG21_:
+{
+    "explanation": "The minutes of vigorous physical activity are an important indicator of overall physical health and have been linked to a reduced risk of coronary heart disease. This feature provides valuable information for predicting the likelihood of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x.split(' - ')[0]) if x != 'BLANK' and x != 'Minutes of Activity per week' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for PA1VIGM_:
+Here is the response for the PA1VIGM_ feature:
+
+{
+    "explanation": "This feature is somewhat important in predicting coronary heart disease as physical inactivity is a well-established risk factor. However, the values are not discrete categories, but rather a range of continuous values. This makes it more challenging to determine the relevance of each value.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x != 'BLANK' and x.isdigit() else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PACAT1:
+Here is the response:
+
+{
+    "explanation": "The physical activity categories are important in predicting coronary heart disease, as regular physical activity has been shown to reduce the risk of heart disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value in ['1', '2', '3'] else 4 if value == '4' else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PAINDX1:
+Here is the response in the specified format:
+
+{
+    "explanation": "While the physical activity index may seem important for predicting coronary heart disease, the categorical and subjective nature of the values make it less reliable for our model. For instance, 'Did Not Meet Aerobic Recommendations' and 'Don’t know/Not Sure/Refused/Missing' are difficult to quantify and may introduce noise to our model.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+
+Let me know if you'd like me to clarify or expand on this response!
+--------------------------------------------------------------------------------
+Response for _PA150R2:
+{
+    "explanation": "This feature appears to be a categorical representation of physical activity levels. It has a clear distinction between levels of physical activity, which can be indicative of an individual's overall health. A machine learning model may benefit from this feature to predict coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: int(x) if x.isdigit() else None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _PA300R2:
+Here is the response:
+
+{
+    "explanation": "This feature measures the amount of physical activity an adult participates in per week, which is a significant risk factor for coronary heart disease.",
+    "accepted": True,
+    "mapping_function": "lambda value: int(value[0]) if value[1] else None",
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PA30021:
+Here is the response:
+
+{
+    "explanation": "This feature seems to indicate the difference in physical activity levels among adults. While physical activity is an important factor in heart health, the categorization of this feature into only two levels may not be granular enough to provide accurate predictions.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _PASTRNG:
+Here is the response:
+
+{
+    "explanation": "This feature provides a straightforward recommendation for muscle strengthening, which may provide some insight into overall physical activity and health habits, a possible risk factor for coronary heart disease. However, without more information, it's unclear how robust this correlation is.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value in ['1', '2'] else None,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _PAREC1:
+Here is the response:
+
+{
+    "explanation": "This feature is relevant to predicting coronary heart disease as it measures the patient's adherence to aerobic and strengthening exercise guidelines. However, it is unclear what specifically 'Met Both Guidelines', 'Met Aerobic Guidelines Only', etc. means in terms of physical activity, so the importance may be limited without further information.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _PASTAE1:
+{
+    "explanation": "This feature appears to capture a binary characteristic of patients' adherence to aerobic and strengthening guidelines, which may be related to their overall health and likelihood of developing coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: 1 if x == '1' else 0,
+    "category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _LMTACT1:
+{
+    "explanation": "The feature _LMTACT1 correlates with coronary heart disease. It indicates the level of limited usual activities. This feature is likely to be important in predicting the disease as limited physical activities may increase the risk of coronary heart disease.",
+    "accepted": True,
+    "mapping_function": lambda x: x if x in ['1', '2', '3'] else None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _LMTWRK1:
+Here is the response:
+
+{
+"explanation": "This feature is useful in predicting coronary heart disease because it provides insight into the patient's ability to perform work-related activities, which can be an indicator of their overall health and lifestyle.",
+"accepted": True,
+"mapping_function": lambda value: 1 if value == '1' else 0,
+"category": "Numerical"
+}
+--------------------------------------------------------------------------------
+Response for _LMTSCL1:
+{
+    "explanation": "Limited social activities may be an important factor in predicting coronary heart disease, as social isolation has been linked to increased risk of cardiovascular disease.",
+    "accepted": True,
+    "mapping_function": lambda value: int(value) if value != '9' and value != 'BLANK' else np.nan,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RFSEAT2:
+{
+    "explanation": "This feature could have some potential correlation with coronary heart disease, but it's not a clear indicator of the disease. It's more of a lifestyle habit.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _RFSEAT3:
+{
+    "explanation": "This feature appears to be related to seat belt usage, which may have some potential correlation with coronary heart disease, but it's not a strong or direct indicator.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _FLSHOT6:
+{
+    "explanation": "This feature seems to be related to the flu shot history, but it's unclear how it directly affects the probability of coronary heart disease. A relationship between flu shots and coronary heart disease has not been established in medical research. This feature is not clearly useful for predicting coronary heart disease.",
+    "accepted": False,
+    "mapping_function": lambda value: None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _PNEUMO2:
+{
+    "explanation": "This feature does not seem to have a clear correlation with coronary heart disease, possibly due to the irregular mapping between values and text descriptions. Therefore, it is recommended to reject this feature.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
+Response for _AIDTST3:
+Here is the response:
+
+{
+    "explanation": "This feature seems to be a categorization of whether an individual has been tested for HIV. While there might be some indirect correlation with coronary heart disease, it's difficult to see a clear direct link.",
+    "accepted": False,
+    "mapping_function": None,
+    "category": "Categorical"
+}
+--------------------------------------------------------------------------------
