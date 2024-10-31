@@ -253,7 +253,7 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
         y (np array): true labels
         tx (np array): input data (features)
         lambda_ (float): regularization parameter
-        initial_w (np array):  initial weights
+        initial_w (np array): initial weights
         max_iters (int): maximum number of iterations
         gamma (float): learning rate
 
@@ -262,15 +262,26 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
     """
     w = initial_w
 
+    # If max_iters is 0, return the initial weights and the initial loss with regularization
+    if max_iters == 0:
+        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
+        return w, loss
+
     for n_iter in range(max_iters):
-        # Compute the gradient and loss
-        grad = compute_logistic_gradient(y, tx, w) + lambda_ * w  # L2 regularization term in gradient
-        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)  # Regularized loss
+        # Compute the gradient with regularization
+        grad = compute_logistic_gradient(y, tx, w) + lambda_ * w
+        # Compute the regularized loss
+        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
 
         # Update the weights
         w = w - gamma * grad
+        # print(
+        #     "Reg Logistic Regression({bi}/{ti}): loss={l}, w0={w0}, w1={w1}".format(
+        #         bi=n_iter, ti=max_iters - 1, l=loss, w0=w[0], w1=w[1]
+        #     )
+        # )
 
-    # Calculate the final regularized loss with the final weights
-    final_loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)
+    # Recalculate the regularized loss with the final weights
+    final_loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
     return w, final_loss
 
