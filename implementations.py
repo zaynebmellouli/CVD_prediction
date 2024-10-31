@@ -114,7 +114,6 @@ def mean_squared_error_sgd(y, tx, initial_w, max_iters, gamma):
     return w, final_loss
 
 
-
 def least_squares(y, tx):
     """
     Solve the least squares problem using the normal equations.
@@ -264,14 +263,14 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
 
     # If max_iters is 0, return the initial weights and the initial loss with regularization
     if max_iters == 0:
-        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
+        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)
         return w, loss
 
     for n_iter in range(max_iters):
         # Compute the gradient with regularization
         grad = compute_logistic_gradient(y, tx, w) + lambda_ * w
         # Compute the regularized loss
-        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
+        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)
 
         # Update the weights
         w = w - gamma * grad
@@ -282,6 +281,5 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
         # )
 
     # Recalculate the regularized loss with the final weights
-    final_loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w ** 2)
+    final_loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)
     return w, final_loss
-
