@@ -6,6 +6,6 @@
 
 - `implementations.py`contains the mandatory functions for the project
 
-- `run.ipynb`contains all the code and steps we followed to implement the project
+- `run.ipynb`contains all the code and steps we followed to implement the project. It is the most complete and invite the reader to follow the steps we took to implement the project in this file.
 
 - `run.py`contains the minimal code to generate the submission (might take 3 minutes of loading the data and 3 minutes of training)
