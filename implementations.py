@@ -273,11 +273,11 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
 
         # Update the weights
         w = w - gamma * grad
-        print(
-            "Regularized Logistic Regression({bi}/{ti}): loss={l}, w0={w0}, w1={w1}".format(
-                bi=n_iter, ti=max_iters - 1, l=loss, w0=w[0], w1=w[1]
-            )
-        )
+        # print(
+        #     "Regularized Logistic Regression({bi}/{ti}): loss={l}, w0={w0}, w1={w1}".format(
+        #         bi=n_iter, ti=max_iters - 1, l=loss, w0=w[0], w1=w[1]
+        #     )
+        # )
     # Recalculate the loss with the final weights
     final_loss = compute_logistic_loss(y, tx, w)
     return w, final_loss
