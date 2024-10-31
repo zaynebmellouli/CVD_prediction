@@ -3,6 +3,8 @@
 import numpy as np
 from implementations import *
 
+np.random.seed(41)
+
 print("loading data...")
 
 x_train = np.genfromtxt("data/x_train.csv", delimiter=",", skip_header=1)
