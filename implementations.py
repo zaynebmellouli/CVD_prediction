@@ -264,20 +264,13 @@ def reg_logistic_regression(y, tx, lambda_, initial_w, max_iters, gamma):
 
     for n_iter in range(max_iters):
         # Compute the gradient and loss
-        grad = (
-            compute_logistic_gradient(y, tx, w) + lambda_ * w
-        )  # Add L2 regularization term to gradient
-        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(
-            w**2
-        )  # Add regularization to loss
+        grad = compute_logistic_gradient(y, tx, w) + lambda_ * w  # L2 regularization term in gradient
+        loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)  # Regularized loss
 
         # Update the weights
         w = w - gamma * grad
-        # print(
-        #     "Regularized Logistic Regression({bi}/{ti}): loss={l}, w0={w0}, w1={w1}".format(
-        #         bi=n_iter, ti=max_iters - 1, l=loss, w0=w[0], w1=w[1]
-        #     )
-        # )
-    # Recalculate the loss with the final weights
-    final_loss = compute_logistic_loss(y, tx, w)
+
+    # Calculate the final regularized loss with the final weights
+    final_loss = compute_logistic_loss(y, tx, w) + (lambda_ / 2) * np.sum(w**2)
     return w, final_loss
+
