@@ -21,7 +21,7 @@ pip install numpy
 ```
 For visualization purposes in the preprocessing and feature selection phases, we also use `matplotlib`, `seaborn` but they are not needed to run the models and the final training.
 
-## How to Run the Project :
+## How to Run the Project (Minimal) :
 Run the command: 
 ```sh
 python run.py
@@ -32,7 +32,7 @@ The train and test csv files should be located in a folder named "data" one dire
 ## Code Organization :
 - `implementations.py`contains the mandatory functions for the project
 
-- `run.ipynb`contains all the code and steps we followed to implement the project. It is the most complete and invite the reader to follow the steps we took to implement the project in this file.
+- **`run.ipynb` contains all the code and steps we followed to implement the project. It is the most complete and we invite the reader to follow the steps we took to implement the project in this file.**
 
 - `run.py`contains the minimal code to generate the submission (might take 3 minutes of loading the data and 3 minutes of training)
 
